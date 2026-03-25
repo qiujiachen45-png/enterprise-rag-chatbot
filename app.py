@@ -156,4 +156,4 @@ if query:
 
 # 页脚
 st.markdown("---")
-st.caption("© 2024 企业 RAG 智能问答系统 - 基于 Streamlit + FAISS + DeepSeek")
+st.caption("© 2026 workshop企业RAG 智能问答系统 - 基于 Streamlit + FAISS + DeepSeek" QiujiachenACCT大一)
