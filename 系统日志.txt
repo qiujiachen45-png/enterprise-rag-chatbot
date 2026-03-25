@@ -1,0 +1,43 @@
+2024-12-12 08:00:15 [INFO] [API-Gateway] 服务启动成功 | 版本: v2.3.1 | 端口: 8080
+2024-12-12 08:00:23 [INFO] [Auth-Service] 用户认证服务初始化完成 | 连接池大小: 50
+2024-12-12 08:00:31 [INFO] [Data-Sync] 数据同步任务调度器已启动 | 同步周期: 30分钟
+2024-12-12 08:01:05 [INFO] [User-Login] 用户ID: 100234 | IP: 192.168.1.105 | 登录成功 | 设备: Web
+2024-12-12 08:01:12 [INFO] [User-Login] 用户ID: 100567 | IP: 192.168.1.208 | 登录成功 | 设备: Mobile
+2024-12-12 08:02:08 [INFO] [API-Request] GET /api/sales/dashboard | 用户: 100234 | 响应时间: 234ms | 状态: 200
+2024-12-12 08:02:15 [INFO] [API-Request] POST /api/reports/generate | 用户: 100567 | 响应时间: 567ms | 状态: 200
+2024-12-12 08:03:22 [WARN] [DB-Connection] 数据库连接池使用率: 85% | 当前连接: 43/50 | 建议扩容
+2024-12-12 08:04:05 [INFO] [Data-Sync] 开始同步销售数据 | 源: CRM系统 | 目标: 数据仓库 | 批次: 202412120804
+2024-12-12 08:04:18 [INFO] [Data-Sync] 同步完成 | 记录数: 12,345 | 耗时: 13.2秒
+2024-12-12 08:05:33 [ERROR] [Payment-Service] 支付接口调用失败 | 订单号: ORD20241212001 | 错误: 第三方服务超时 | 重试次数: 2
+2024-12-12 08:05:45 [INFO] [Payment-Service] 支付重试成功 | 订单号: ORD20241212001 | 重试次数: 3
+2024-12-12 08:06:12 [INFO] [User-Login] 用户ID: 101892 | IP: 10.0.0.45 | 登录成功 | 设备: API
+2024-12-12 08:07:08 [WARN] [Cache-Service] Redis缓存命中率下降 | 当前命中率: 72% | 基准值: 85%
+2024-12-12 08:08:21 [INFO] [Job-Scheduler] 定时任务执行 | 任务ID: daily_report | 开始时间: 08:08:21
+2024-12-12 08:09:45 [INFO] [Job-Scheduler] 定时任务完成 | 任务ID: daily_report | 耗时: 84秒 | 生成报表数: 15
+2024-12-12 08:10:03 [ERROR] [File-Service] 文件上传失败 | 文件名: Q4_forecast.xlsx | 用户: 100234 | 错误: 磁盘空间不足
+2024-12-12 08:10:15 [INFO] [System-Monitor] 磁盘使用率告警 | 分区: /data | 使用率: 92% | 可用空间: 8.2GB
+2024-12-12 08:12:00 [INFO] [User-Logout] 用户ID: 100234 | 会话时长: 10分55秒 | 操作次数: 23
+2024-12-12 08:13:22 [INFO] [API-Request] GET /api/customer/insights | 用户: 101892 | 响应时间: 456ms | 状态: 200
+2024-12-12 08:15:47 [INFO] [Data-Sync] 开始同步客户数据 | 源: 营销系统 | 目标: 数据仓库 | 批次: 202412120815
+2024-12-12 08:16:03 [INFO] [Data-Sync] 同步完成 | 记录数: 8,921 | 耗时: 16.5秒
+2024-12-12 08:18:34 [WARN] [Rate-Limiter] API调用频率超限 | 用户: 101234 | 接口: /api/export | 当前QPS: 15 | 限制: 10
+2024-12-12 08:20:11 [INFO] [User-Login] 用户ID: 102456 | IP: 192.168.2.88 | 登录成功 | 设备: Web
+2024-12-12 08:22:45 [ERROR] [MQ-Consumer] 消息消费失败 | Topic: order_created | 消息ID: msg_001234 | 错误: 数据库连接超时
+2024-12-12 08:23:12 [INFO] [MQ-Consumer] 消息重试成功 | Topic: order_created | 消息ID: msg_001234 | 重试次数: 2
+2024-12-12 08:25:33 [INFO] [API-Request] POST /api/ml/predict | 用户: system | 响应时间: 1234ms | 状态: 200 | 模型: sales_forecast_v2
+2024-12-12 08:28:09 [INFO] [Report-Generator] 周报生成完成 | 周期: 第50周 | 报表大小: 2.3MB | 发送: 45人
+2024-12-12 08:30:22 [INFO] [DB-Backup] 数据库备份开始 | 数据库: prod_db | 备份类型: 增量
+2024-12-12 08:35:47 [INFO] [DB-Backup] 数据库备份完成 | 备份大小: 2.1GB | 耗时: 5分25秒
+2024-12-12 08:38:15 [WARN] [Security] 异常登录检测 | 用户: 100567 | IP: 45.33.22.11 | 位置: 境外 | 标记: 需验证
+2024-12-12 08:40:03 [INFO] [User-Login] 用户ID: 103789 | IP: 192.168.1.156 | 登录成功 | 设备: Mobile
+2024-12-12 08:42:56 [INFO] [API-Request] GET /api/kpi/dashboard | 用户: 103789 | 响应时间: 178ms | 状态: 200
+2024-12-12 08:45:12 [ERROR] [ETL-Process] ETL任务失败 | 任务: customer_360 | 阶段: transform | 错误: 数据格式异常
+2024-12-12 08:46:30 [INFO] [ETL-Process] ETL任务重试成功 | 任务: customer_360 | 总耗时: 78秒
+2024-12-12 08:48:44 [INFO] [Notification] 告警通知发送 | 渠道: 钉钉 | 接收人: 运维组 | 内容: 磁盘使用率92%
+2024-12-12 08:50:18 [INFO] [User-Logout] 用户ID: 101892 | 会话时长: 42分18秒 | 操作次数: 87
+2024-12-12 08:52:33 [INFO] [Data-Sync] 开始同步产品数据 | 源: ERP系统 | 目标: 数据仓库 | 批次: 202412120852
+2024-12-12 08:53:01 [INFO] [Data-Sync] 同步完成 | 记录数: 3,456 | 耗时: 28.3秒
+2024-12-12 08:55:27 [WARN] [Memory] JVM堆内存使用率告警 | 当前使用: 3.8GB/4GB | 老年代: 82%
+2024-12-12 08:58:09 [INFO] [GC] 触发Full GC | 回收前: 3.6GB | 回收后: 2.1GB | 耗时: 1.2秒
+2024-12-12 09:00:00 [INFO] [Job-Scheduler] 整点任务触发 | 任务: hourly_aggregation | 时间窗口: 08:00-09:00
+2024-12-12 09:01:23 [INFO] [API-Request] GET /api/realtime/metrics | 用户: monitor | 响应时间: 89ms | 状态: 200

@@ -1,0 +1,6 @@
+streamlit
+faiss-cpu
+numpy
+sentence-transformers
+openai
+scikit-learn
