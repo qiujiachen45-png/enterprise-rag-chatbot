@@ -10,7 +10,10 @@ import os
 # 1️⃣ 初始化配置
 # ===============================
 st.set_page_config(page_title="企业 RAG 智能问答系统", layout="wide")
-client = OpenAI() # 自动使用环境变量中的 API_KEY
+client = OpenAI(
+    api_key="sk-51ba3b3e428d407bb7f41de7de4c371f",  # ⚠️ 建议改用环境变量
+    base_url="https://api.deepseek.com"  # 正确的 DeepSeek API 地址
+)
 
 @st.cache_resource
 def load_resources():
